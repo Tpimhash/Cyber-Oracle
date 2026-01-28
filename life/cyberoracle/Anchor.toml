@@ -1,0 +1,17 @@
+[programs.localnet]
+cyberoracle = "862LYnc3jZJ6bFmjyMjE9NMwehJaAe2Do5UbbEV1kbJU"
+
+[programs.devnet]
+cyberoracle = "862LYnc3jZJ6bFmjyMjE9NMwehJaAe2Do5UbbEV1kbJU"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+
+
+[scripts]
+test = "anchor test"
+
+[toolchain]
+anchor_version = "0.30.1"

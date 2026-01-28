@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "programs/*"
+]
+resolver = "2"
+
+# 核心修复 3: 开启溢出检查，Solana 合约强制要求
+[profile.release]
+overflow-checks = true
+
+[patch.crates-io]
+constant_time_eq = { path = "vendor/constant_time_eq-0.4.2" }
+blake3 = { path = "vendor/blake3-1.8.3" }
